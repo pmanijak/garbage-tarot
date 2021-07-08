@@ -48,5 +48,11 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: "@debiki/gatsby-plugin-talkyard",
+      options: {
+        talkyardServerUrl: "https://comments-demo.talkyard.io"
+      }
+    }
   ],
 };
