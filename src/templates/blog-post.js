@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard';
 
 import heroStyles from '../components/hero.module.css'
 
@@ -37,6 +38,7 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
+            <TalkyardCommentsIframe />
           </div>
         </div>
       </Layout>
